@@ -1,23 +1,28 @@
-import logo from './logo.svg';
+//Area para Importar Coisas:
+
 import './App.css';
 
 function App() {
+  //Area Para Declarar Variaveis:
+  let name = 'Alexandre'
+  const novoNome = name.toUpperCase();
+
+  const imagem = "https://share.google/VMTHWhjm7SvXzZuyc"
+
+
+  function som(n1, n2){
+    return n1 + n2;
+  }
+
+
   return (
+      /* Div do conteudo principal*/
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h2>Alterando o JSX</h2>
+      <p>Ola, eu sou {novoNome}</p>
+      <p>Soma: {som(2, 4)}</p>
+      <img src = {imagem} alt = 'Minha imagem'/>
+      
     </div>
   );
 }
